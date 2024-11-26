@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.navbar-brand {
+  font-weight: 600;
+  transform: rotate(-45deg);
+}
+
+.navbar-text,
+.navbar a {
+  color: #63372c !important;
+}
+
 .carousel-item img {
   height: 630px;
   width: 100%;
@@ -12,6 +22,20 @@
 .carousel-caption {
   position: absolute;
   top: 40%;
+}
+
+.carousel-caption h1 {
+  color: #63372c;
+}
+
+.carousel-caption p {
+  color: #262322;
+  font-weight: 600;
+}
+
+.feature.col {
+  border-left: 2px solid rgb(0, 255, 13);
+  border-right: 1px solid rgb(0, 255, 255);
 }
 
 .fa-solid,
@@ -86,4 +110,41 @@
   background-color: white;
   color: orange;
   border: orange;
+}
+.carousel-indicators button {
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: orange !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  #album container > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-section {
+    margin: 0;
+  }
+
+  .horizontal-card {
+    flex-direction: column;
+  }
+
+  .testimonial .content {
+    padding: 0;
+  }
+  .testimonial .carousel-item div {
+    /* flex-direction: column; */
+    width: 100%;
+    height: auto;
+  }
 }
