@@ -43,6 +43,18 @@
   color: orange;
 }
 
+/* Blog section */
+.inner-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: 600px;
+}
+
+.inner-grid .card-img {
+  height: 185px;
+}
+
 /* Discount section */
 .discount-section {
   height: 300px;
