@@ -4,14 +4,39 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", serif;
+}
+
+p {
+  font-family: "Open Sans", serif;
+}
+
 .navbar-brand {
-  font-weight: 600;
+  font-weight: 800 !important;
   transform: rotate(-45deg);
 }
 
 .navbar-text,
 .navbar a {
-  color: #63372c !important;
+  font-weight: 620;
+  background: -webkit-linear-gradient(#23640a, #070be9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a.active {
+  background: -webkit-linear-gradient(#e24406, #e6c406);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .carousel-item img {
@@ -25,17 +50,16 @@
 }
 
 .carousel-caption h1 {
-  color: #63372c;
+  background: -webkit-linear-gradient(#e44c06, #c4d109);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .carousel-caption p {
-  color: #262322;
+  background: -webkit-linear-gradient(#0f0bee, #ce0909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 600;
-}
-
-.feature.col {
-  border-left: 2px solid rgb(0, 255, 13);
-  border-right: 1px solid rgb(0, 255, 255);
 }
 
 .fa-solid,
@@ -45,6 +69,33 @@
 
 .fa-plane-up {
   transform: rotate(45deg);
+}
+
+/* Feature head section */
+.feature-head-section .container {
+  background-image: linear-gradient(
+    to top,
+    #fbc2eb 0%,
+    #a6c1ee 100%
+  ) !important;
+}
+
+.feature-head .carousel-item .container .row .feature {
+  /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: linear-gradient(to right, #6b11cb81 0%, #2574fc7c 100%);
+  border-radius: 50%;
+}
+
+/* Album section */
+#album img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+  z-index: 100;
+  transition: 500ms;
 }
 
 /* Testimonial section */
@@ -77,6 +128,10 @@
 
 .inner-grid .card-img {
   height: 185px;
+}
+
+.blog-section img:hover {
+  box-shadow: outset solid 2px 2px black;
 }
 
 /* Discount section */
