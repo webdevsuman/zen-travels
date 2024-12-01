@@ -29,6 +29,11 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- ------------Favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon_io/site.webmanifest">
   </head>
   <body>
     <!----------------------------------------- Navigation section -->
@@ -57,19 +62,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="./pages/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="./pages/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#album">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
             </li>
           </ul>
           <!-- Span part Added -->
@@ -353,54 +358,7 @@
           </div>
         </div>
 
-        <div class="carousel-item">
-          <!-- <img src="..." class="d-block w-100" alt="..." /> -->
-          <div class="container d-block w-100" id="featured-3">
-            <div class="row g-4 px-5 mx-5 row-cols-1 row-cols-lg-3">
-              <div class="feature col">
-                <div
-                  class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
-                >
-                  <i class="fa-regular fa-image"></i>
-                </div>
-                <h4 class="fs-4 text-body-emphasis">Title 7</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  facilis quis, consequatur at iste laudantium fuga consectetur
-                  cum earum repellat non, inventore praesentium ipsum suscipit.
-                </p>
-              </div>
-              <div class="feature col">
-                <div
-                  class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
-                >
-                  <i class="fa-regular fa-image"></i>
-                </div>
-                <h4 class="fs-4 text-body-emphasis">Title 8</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  maiores sit vero illum, itaque similique. Exercitationem
-                  similique nihil sint possimus a laboriosam repellendus veniam
-                  nam.
-                </p>
-              </div>
-              <div class="feature col">
-                <div
-                  class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
-                >
-                  <i class="fa-regular fa-image"></i>
-                </div>
-                <h4 class="fs-4 text-body-emphasis">Title 9</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sapiente laboriosam blanditiis hic quae molestiae consectetur
-                  dicta! Odit facere, ipsam iusto dolorum earum dolor! Quo,
-                  deleniti!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <button
         class="carousel-control-prev"
@@ -558,7 +516,7 @@
     <!-- Blog section -->
      <div class="container my-5">
        <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <h1 class="text-body-emphasis">Latest News From Blog</h1>
+    <h1 class="fw-light">Latest News From Blog</h1>
     <p class="lead">
       See Whats People Are Sharing Their Thoughts
     </p>
@@ -596,7 +554,7 @@
      <!-- Testimonial section -->
      <div class="testimonial-main"> <div class="container my-5">
        <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <h1 class="text-body-emphasis">What Our Client Says</h1>
+    <h1 class="fw-light">What Our Client Says</h1>
     <p class="lead">
       People's sharing their thought about our works
     </p>
@@ -604,18 +562,18 @@
 </div>
 
 <!-- carousel -->
- <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center">
+ <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="testimonial carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item">
       <!-- <img src="..." class="d-block w-100" alt="..."> -->
        <div class="d-flex w-100">
         <div>
-          <img src="https://picsum.photos/200/200" alt="Client" height="200" width="200">
+          <img class="img-fluid" src="./assets/images/tourist-testimonial.jpg" alt="Client">
         </div>
         <div class="content" style="padding: 20px 50px;">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis recusandae odio repudiandae illo nisi ipsa odit dolores possimus adipisci.</p>
@@ -627,10 +585,34 @@
        </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+       <div class="d-flex w-100">
+        <div>
+          <img class="img-fluid" src="./assets/images/tourist2.jpg" alt="Client">
+        </div>
+        <div class="content" style="padding: 20px 50px;">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis recusandae odio repudiandae illo nisi ipsa odit dolores possimus adipisci.</p>
+          <div>
+            <p class="author">Author</p>
+            <p>Location, Country</p>
+          </div>
+        </div>
+       </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="carousel-item active">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+       <div class="d-flex w-100">
+        <div>
+          <img class="img-fluid" src="./assets/images/tourist3.jpg" alt="Client">
+        </div>
+        <div class="content" style="padding: 20px 50px;">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officiis recusandae odio repudiandae illo nisi ipsa odit dolores possimus adipisci.</p>
+          <div>
+            <p class="author">Author</p>
+            <p>Location, Country</p>
+          </div>
+        </div>
+       </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -659,9 +641,9 @@
       <div class="col-6 col-md-2 mb-3">
         <h5>About Us</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="./pages/about.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="./pages/blog.html" class="nav-link p-0 text-body-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="./pages/contact.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
     
         </ul>
       </div>
@@ -669,7 +651,7 @@
       <div class="col-6 col-md-2 mb-3">
         <h5>Address</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">4433 Heavner Court <br>
+          <li class="nav-item mb-2"><a href="./pages/contact.html" class="nav-link p-0 text-body-secondary">4433 Heavner Court <br>
 Plainview, New York
 </a></li>
           
@@ -679,8 +661,8 @@ Plainview, New York
       <div class="col-6 col-md-2 mb-3">
         <h5>Contact Us</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: abc@email.com</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cell: +855-544-1234</a></li>
+          <li class="nav-item mb-2"><a href="mailto:abc@gmail.com" class="nav-link p-0 text-body-secondary">Email: abc@email.com</a></li>
+          <li class="nav-item mb-2"><a href="tel:8555441234" class="nav-link p-0 text-body-secondary">Cell: +855-544-1234</a></li>
           
         </ul>
       </div>
@@ -691,16 +673,19 @@ Plainview, New York
           
         
           <ul class="list-unstyled d-flex">
-        <li><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="link-body-emphasis" href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
         </form>
       </div>
     </div>
 
     <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
-      <p>© 2024 Company, Inc. All rights reserved.</p>
+     <p class="text-center">
+            Copyright © 2024 Suman Das. <br />
+            All rights reserved.
+          </p>
       
     </div>
   </footer>

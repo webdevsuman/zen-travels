@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  background: -webkit-linear-gradient(#0f0bee, #ce0909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1,
 h2,
 h3,
@@ -118,6 +124,12 @@ p {
   color: orange;
 }
 
+.testimonial img {
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
+}
+
 /* Blog section */
 .inner-grid {
   display: grid;
@@ -173,6 +185,76 @@ p {
   background-color: orange !important;
 }
 
+/* Contact Us section  */
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 100px;
+  width: 100%;
+  /* gap: 60px; */
+}
+.contact-text {
+  width: 50%;
+  padding: 0px 40px 20px;
+}
+form.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height: 300px; */
+}
+
+.form input {
+  height: 40px;
+  padding: 0px 18px;
+  background-color: #ffffff;
+  border: none;
+  color: #4e4b4b;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form input::placeholder {
+  color: #737272;
+}
+
+.form button {
+  width: 140px;
+  margin-top: 50px;
+}
+.map {
+  width: 50%;
+  padding-top: 70px;
+}
+
+.contact-text h1 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.form input.message-text {
+  height: 135px;
+}
+.contact-text :last-child {
+  margin-top: 30px;
+}
+
+.blue-btn {
+  background-color: #0355cc;
+  color: white;
+  border: 1px solid #0355cc;
+  padding: 15px 30px;
+  font-weight: 700;
+}
+
+.blue-btn:hover {
+  background-color: #ffffff;
+  color: #0355cc;
+  border: 1px solid #0355cc;
+}
+
+/* ------------------------RESPONSIVE DESIGN--------------------------------------- */
+
 @media screen and (max-width: 1200px) {
   .inner-grid {
     display: flex;
@@ -201,5 +283,34 @@ p {
     /* flex-direction: column; */
     width: 100%;
     height: auto;
+  }
+
+  /* Contact section */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+  }
+  .contact-text {
+    width: 80%;
+  }
+  .map {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+    height: 0;
+    width: 80%;
+  }
+  .map iframe {
+    position: absolute;
+    top: 0;
+
+    left: 0;
+
+    width: 100% !important;
+
+    height: 100% !important;
   }
 }
