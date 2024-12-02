@@ -45,6 +45,13 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+/* ---------------------------Hero section ------------------------- */
+
+#hero-section {
+  background-color: black !important;
+  background-blend-mode: overlay !important;
+}
+
 .carousel-item img {
   height: 630px;
   width: 100%;
@@ -102,6 +109,7 @@ p {
   border-radius: 20px;
   z-index: 100;
   transition: 500ms;
+  overflow: hidden;
 }
 
 /* Testimonial section */
@@ -253,6 +261,31 @@ form.form {
   border: 1px solid #0355cc;
 }
 
+.follow-us {
+  text-align: right;
+}
+
+.follow-us ul {
+  justify-content: end;
+}
+
+.to-top {
+  background-color: rgba(171, 218, 224, 0.486);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.to-top svg {
+  fill: #4e4b4b85;
+  height: 40px;
+  width: 40px;
+}
+
 /* ------------------------RESPONSIVE DESIGN--------------------------------------- */
 
 @media screen and (max-width: 1200px) {
@@ -263,7 +296,16 @@ form.form {
     height: auto;
     margin-bottom: 40px;
   }
-  #album container > div {
+
+  .feature-head .feature {
+    height: 200px;
+  }
+
+  .feature-head .feature p {
+    height: 100px;
+    overflow: hidden;
+  }
+  #album .container > div {
     display: flex;
     flex-direction: column;
   }
@@ -277,12 +319,18 @@ form.form {
   }
 
   .testimonial .content {
-    padding: 0;
+    padding: 0 !important;
   }
+
+  .testimonial {
+    height: 600px !important;
+    text-align: center;
+  }
+
   .testimonial .carousel-item div {
-    /* flex-direction: column; */
+    flex-direction: column;
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
 
   /* Contact section */
@@ -312,5 +360,13 @@ form.form {
     width: 100% !important;
 
     height: 100% !important;
+  }
+
+  .follow-us {
+    text-align: left;
+  }
+
+  .follow-us ul {
+    justify-content: start;
   }
 }
