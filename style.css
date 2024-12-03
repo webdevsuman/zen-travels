@@ -297,6 +297,10 @@ form.form {
     margin-bottom: 40px;
   }
 
+  .inner-grid .card-img {
+    height: auto;
+  }
+
   .feature-head .feature {
     height: 200px;
   }
@@ -305,10 +309,10 @@ form.form {
     height: 100px;
     overflow: hidden;
   }
-  #album .container > div {
+  /* #album .container > div {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .blog-section {
     margin: 0;
