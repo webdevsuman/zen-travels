@@ -29,6 +29,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- Animate on scroll library -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- ------------Favicon -->
    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
@@ -174,7 +177,8 @@
     <!-- Jumbotron part -->
     <div class="feature-head-section my-5">
       <div class="p-5 text-center bg-body">
-        <div class="container py-5">
+        <div class="container py-5" data-aos="fade-up" 
+     data-aos-duration="2000">
           <h1 class="text-body-emphasis">Welcome to Zen</h1>
           <p class="col-lg-8 mx-auto lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel beatae
@@ -447,7 +451,9 @@
     <main>
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
+          <div class="col-lg-6 col-md-8 mx-auto" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <h1 class="fw-light">Find Your Destination</h1>
             <p class="lead text-body-secondary">
               Most Popular Places Are Waiting for You
@@ -515,11 +521,13 @@
 
     <!-- Blog section -->
      <div class="container my-5">
-       <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <h1 class="fw-light">Latest News From Blog</h1>
-    <p class="lead">
-      See Whats People Are Sharing Their Thoughts
-    </p>
+       <div class="p-5 text-center bg-body-tertiary rounded-3" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-out-sine">
+          <h1 class="fw-light">Latest News From Blog</h1>
+          <p class="lead">
+             See Whats People Are Sharing Their Thoughts
+           </p>
   </div>
 </div>
      <div class="blog-section row container-fluid">
@@ -552,8 +560,11 @@
       </div>
      </div>
      <!-- Testimonial section -->
-     <div class="testimonial-main"> <div class="container my-5">
-       <div class="p-5 text-center bg-body-tertiary rounded-3">
+     <div class="testimonial-main" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"> 
+      <div class="container my-5">
+       <div class="p-5 text-center bg-body-tertiary rounded-3" >
     <h1 class="fw-light">What Our Client Says</h1>
     <p class="lead">
       People's sharing their thought about our works
@@ -627,7 +638,7 @@
 </div>
 
 <!-- Discount section -->
- <main class="discount-section">
+ <main class="discount-section" data-aos="zoom-in">
   <div class="discount">
     <h2>Get special discount on your first journey.</h2>
     <button type="button" class="btn-discount">Book now</button>
@@ -701,5 +712,11 @@ Plainview, New York
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Animate on scroll library js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+  AOS.init();
+</script>
+
   </body>
 </html>
